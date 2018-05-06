@@ -1,0 +1,8 @@
+{"level": "DEBUG", "message": "zero zero zero"}
+{"level": "INFO", "message": "one one one"}
+{"level": "WARN", "message": "two two two"}
+{"level": "DEBUG", "message": "three three three"}
+{"level": "INFO", "message": "four four four"}
+{"level": "DEBUG", "message": "five five five"}
+{"level": "ERROR", "message": "six six six"}
+{"level": "WARN", "message": "seven seven seven"}

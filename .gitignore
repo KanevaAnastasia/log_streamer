@@ -1,0 +1,10 @@
+# Settings
+.env
+
+# Cache
+*.pyc
+__pycache__/
+
+# Other
+db.sqlite3
+log.json
