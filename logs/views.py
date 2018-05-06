@@ -11,11 +11,11 @@ from django.conf import settings
 @csrf_exempt
 def read_log(request):
     try:
-        offset = int(request.POST['offset'])
+        offset = int(json.loads(request.body)['offset'])
     except KeyError:
         return JsonResponse({'ok': False, 'reason': 'offset parameter is missing'})
     except ValueError:
-        return JsonResponse({'ok': False, 'reason': 'incorrect offset value'})
+        return JsonResponse({'ok': False, 'reason': 'incorrect offset value or json format'})
 
     correct_levels = ['DEBUG', 'INFO', 'WARN', 'ERROR']
     step = 3
